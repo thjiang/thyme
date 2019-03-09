@@ -25,16 +25,25 @@ export default {
 
 <style lang="scss">
 body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
-        "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    color: #5f6368;
+
     -webkit-text-size-adjust: 100%;
 }
 
-body, html, section, article, div, ul, li, h1, h2, h3, h4, h5, p {
+body, html, section, article, div, ul, li, h1, h2, h3, h4, h5, p, button {
     margin: 0;
     padding: 0;
     font-weight: normal;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
 }
 
 li {
@@ -42,7 +51,7 @@ li {
 }
 
 a {
-    color: #409EFF;
+    color: #5f6368;
     text-decoration: none;
 }
 
@@ -53,4 +62,5 @@ html, body, .app {
 .clear {
     clear: both;
 }
+
 </style>

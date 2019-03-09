@@ -38,7 +38,6 @@
     color: #FFF;
     text-align: center;
     background: rgba(18, 184, 244, .7);
-
     justify-content: center;
     align-items: center;
     h2, h3, p, div {
