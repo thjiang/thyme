@@ -1,12 +1,13 @@
 import index from "./components/index.vue";
+import intro from "./components/intro.vue";
 
 export default {
     // base: process.env.NODE_ENV === "production" ? '/' : '/web/',
-    // mode: "history",
+    mode: "history",
     routes: [
         {
             path: "/",
-            component: index
+            component: intro
         },
         {
             path: "/index",

@@ -56,7 +56,7 @@ module.exports = {
         new NyanProgressPlugin({
             restoreCursorPosition: true,
             debounceInterval: 50,
-            nyanCatSays: progress => progress === 1 && "呦,写BUG呢？"
+            nyanCatSays: progress => progress === 1 && "写BUG呢？"
         }),
         new VueLoaderPlugin(),
         // new ProgressBarPlugin(),

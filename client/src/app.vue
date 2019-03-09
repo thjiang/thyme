@@ -22,3 +22,35 @@ export default {
     mounted() {}
 };
 </script>
+
+<style lang="scss">
+body {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+body, html, section, article, div, ul, li, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #409EFF;
+    text-decoration: none;
+}
+
+html, body, .app {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+</style>
