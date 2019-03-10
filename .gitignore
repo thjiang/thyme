@@ -3,7 +3,6 @@ npm-debug.log
 yarn-error.log
 node_modules/
 coverage/
-public/
 .idea/
 .vscode/
 run/

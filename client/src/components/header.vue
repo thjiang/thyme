@@ -19,19 +19,26 @@
 
 <style lang="scss" scoped>
 .index-header {
-    padding: 0 30px;
     height: 64px;
+    padding: 0 30px;
     line-height: 64px;
     .header-icon, .logo, .options {
         display: inline-block;
-        vertical-align: middle;
         cursor: pointer;
+        vertical-align: middle;
     }
     .header-icon {
+        position: relative;
         width: 48px;
         height: 48px;
         border-radius: 48px;
         transition: background-color 300ms ease-out;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     .header-icon:hover {
         background-color: #CCC;

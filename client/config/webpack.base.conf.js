@@ -1,6 +1,5 @@
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
-// const ProgressBarPlugin = require('progress-bar-webpack-plugin');
-const NyanProgressPlugin = require("nyan-progress-webpack-plugin");
+const WebpackBar = require('webpackbar');
 const HappyPack = require("happypack");
 
 module.exports = {
@@ -53,13 +52,8 @@ module.exports = {
         }
     },
     plugins: [
-        new NyanProgressPlugin({
-            restoreCursorPosition: true,
-            debounceInterval: 50,
-            nyanCatSays: progress => progress === 1 && "写BUG呢？"
-        }),
         new VueLoaderPlugin(),
-        // new ProgressBarPlugin(),
+        new WebpackBar({ color: '#0AAFFF' }),
         new HappyPack({
             id: "js",
             threads: 4,

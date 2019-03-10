@@ -1,4 +1,4 @@
-import index from "./components/index.vue";
+import index from "./components/index/index.vue";
 import intro from "./components/intro.vue";
 
 export default {
@@ -12,6 +12,11 @@ export default {
         {
             path: "/index",
             component: index
+        },
+        {
+            path: "/album",
+            component: () =>
+                import(/* webpackChunkName: "album" */ "./components/album/album.vue")
         },
         {
             path: "/async",
